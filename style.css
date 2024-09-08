@@ -1,0 +1,174 @@
+body {
+    font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
+    font-style: normal;
+    color: aliceblue;
+    background-color: rgb(38, 3, 70); 
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
+    height: 100vh; 
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 4.5rem;
+    color: rgb(99, 99, 99);
+    text-align: center;
+    letter-spacing: 0rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: rgb(156, 63, 0);
+    text-align: center;
+    letter-spacing: 0.1rem;
+}
+
+h3 {
+    font-family: "Creepster", system-ui;
+    font-size: 1.5rem;
+    font-weight: 100;
+    color: rgb(27, 27, 27);
+    text-align: center;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+section input {
+    width: 30rem;
+    border: none;
+    padding: 1rem;
+    border-radius: 1.5rem;
+    margin-bottom: 1rem;
+    color: rgb(160, 64, 0)
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+section button {
+    padding: 0.8rem 1.2rem;
+    border: none;
+    border-radius: 1.5rem;
+    background-color: rgb(255, 226, 187);
+    color: rgb(31, 31, 31);
+    font-family: "Caveat", cursive;
+    font-weight: bolder;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+section button:hover {
+background-color: rgb(216, 109, 60);
+box-shadow: 0 4px 8px rgb(56, 3, 3);
+}
+
+.resultados-pesquisa {
+    width: 60rem;
+    height: 46vh;
+    overflow-y: auto;
+    margin-top: 1rem;
+    border-radius: 0.6rem;
+}
+
+.item-resultado {
+    background: rgb(24, 0, 0);
+    border-radius: 0.6rem;
+    padding: 1rem;
+    font-size: 23px;
+    color: rgb(194, 194, 194);
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 4px black;
+}
+
+.item-resultado a{
+    text-decoration: none;
+    color: rgb(189, 73, 68);
+}
+
+.item-resultado a:hover{
+    text-decoration: overline;
+}
+
+.descricao-meta {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(194, 194, 194);
+    margin: 0.5rem 0;
+}
+
+footer {
+    background-color: rgb(11, 0, 26);
+    color: rgb(184, 184, 184);
+    font-size: 20px;
+    text-align: center;
+    padding: 0;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+img {
+    width: 200px;
+    height: 100px;
+    border: 1px black;
+    margin: 20px;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+        letter-spacing: 0.2rem;
+    }
+
+    section input {
+        width: 25rem;
+        padding: 0.8rem;
+    }
+
+    .resultados-pesquisa {
+        width: 40rem;
+        height: 40vh;
+    }
+
+    .item-resultado h3 {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 480px) {
+
+    h1 {
+        font-size: 1.8rem;
+        letter-spacing: 0.1rem;
+    }
+
+    section input {
+        width: 17rem;
+    }
+
+    section button {
+        padding: 0.6rem 1rem;
+        font-size: 0.9rem;
+    }
+
+    .resultados-pesquisa {
+        width: 90%;
+        height: 50vh;
+    }
+
+    .item-resultado h3{
+        font-size: 1.1rem;
+    }
+
+    footer {
+        font-size: 0.9rem;
+    }
+}
